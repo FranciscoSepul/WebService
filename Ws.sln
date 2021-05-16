@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1500
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WsApp", "WsApp\WsApp.csproj", "{5353377D-3F60-4BC5-ACD5-06B21F6C721A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5353377D-3F60-4BC5-ACD5-06B21F6C721A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5353377D-3F60-4BC5-ACD5-06B21F6C721A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5353377D-3F60-4BC5-ACD5-06B21F6C721A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5353377D-3F60-4BC5-ACD5-06B21F6C721A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D5FE04F-8843-4D94-BD95-959C27B9F721}
+	EndGlobalSection
+EndGlobal

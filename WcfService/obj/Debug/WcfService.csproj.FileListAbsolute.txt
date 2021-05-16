@@ -1,0 +1,6 @@
+c:\Users\wwwvi\source\repos\Ws\WcfService\bin\WcfService.dll.config
+c:\Users\wwwvi\source\repos\Ws\WcfService\bin\WcfService.dll
+c:\Users\wwwvi\source\repos\Ws\WcfService\bin\WcfService.pdb
+c:\Users\wwwvi\source\repos\Ws\WcfService\obj\Debug\WcfService.csproj.CoreCompileInputs.cache
+c:\Users\wwwvi\source\repos\Ws\WcfService\obj\Debug\WcfService.dll
+c:\Users\wwwvi\source\repos\Ws\WcfService\obj\Debug\WcfService.pdb

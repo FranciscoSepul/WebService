@@ -1,0 +1,7 @@
+c:\users\wwwvi\source\repos\Ws\Ws\bin\Ws.dll.config
+c:\users\wwwvi\source\repos\Ws\Ws\bin\Ws.dll
+c:\users\wwwvi\source\repos\Ws\Ws\bin\Ws.pdb
+c:\users\wwwvi\source\repos\Ws\Ws\obj\Debug\Ws.csprojAssemblyReference.cache
+c:\users\wwwvi\source\repos\Ws\Ws\obj\Debug\Ws.csproj.CoreCompileInputs.cache
+c:\users\wwwvi\source\repos\Ws\Ws\obj\Debug\Ws.dll
+c:\users\wwwvi\source\repos\Ws\Ws\obj\Debug\Ws.pdb
