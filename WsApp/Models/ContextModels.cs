@@ -12,6 +12,7 @@ namespace WsApp.Models
         {
 
         }
-        public DbSet<User> users { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Tarjetas> Tarjetas { get; set; }
     }
 }

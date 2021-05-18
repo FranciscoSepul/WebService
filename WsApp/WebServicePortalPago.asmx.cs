@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
+using WsApp.Dto;
+using WsApp.Interface;
+using WsApp.Services;
 
 namespace WsApp
 {
@@ -16,20 +19,64 @@ namespace WsApp
     // [System.Web.Script.Services.ScriptService]
     public class WebService1 : System.Web.Services.WebService
     {
+        PagoService _pagoService = new PagoService();
 
-        [WebMethod(Description ="Servicio Portal Pago")]
-        public String ServicioPagos(string Pan, string Mes, string Ano, string CodigoSeguridad, string MarcaTarjeta, string Pass)
+        [WebMethod(Description = "Servicio Portal Pago")]
+        public CodigosDto ServicioPagos(string Pan, string Mes, string Ano, string CodigoSeguridad, string MarcaTarjeta, string Pass)
         {
-            return "";
+            PagoService _pagoService = new PagoService();
+            try
+            {
+                CodigosDto codigo = new CodigosDto();
+                if (Pan != "" && Mes != "" && Ano != "" && CodigoSeguridad != "" && MarcaTarjeta != "" && Pass != "")
+                {
+                    Pago pago = new Pago();
+                    pago.Pan = Pan;
+                    pago.Mes = int.Parse(Mes);
+                    pago.Ano = int.Parse(Ano);
+                    pago.CodigoSeguridad = CodigoSeguridad;
+                    pago.MarcaTarjeta = MarcaTarjeta;
+                    pago.Pass = Pass;
+                    var Response = _pagoService.Pago(pago);
+                    return codigo;
+                }
+                else
+                {
+                    codigo.codigo = "15";
+                    codigo.mensaje = "Datos Erroneos";
+                    return codigo;
+                }
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+           
         }
 
+
         [WebMethod(Description = "Servicio Descuento")]
-        public String ServicioDescuento(string idCliente, string monto)
+        public CodigosDto ServicioDescuento(string idCliente, string monto)
         {
-            return "";
+            CodigosDto codigo = new CodigosDto();
+            if (monto != "" && idCliente != "")
+            {
+                Descuento descuento = new Descuento();
+                descuento.idCliente = idCliente;
+                descuento.monto = monto;
+                var Response = _pagoService.Descuento(descuento);
+                return codigo;
+            }
+            else
+            {
+                codigo.codigo = "15";
+                codigo.mensaje = "Datos Erroneos";
+                return codigo;
+            }
         }
     }
 
-        
-    
+
+
 }

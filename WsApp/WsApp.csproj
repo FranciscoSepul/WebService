@@ -78,10 +78,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dto\CodigosDto.cs" />
+    <Compile Include="Dto\Descuento.cs" />
+    <Compile Include="Dto\Pago.cs" />
+    <Compile Include="Interface\IPagoInterface.cs" />
+    <Compile Include="Migrations\202105180056102_Inicial.cs" />
+    <Compile Include="Migrations\202105180056102_Inicial.Designer.cs">
+      <DependentUpon>202105180056102_Inicial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ContextModels.cs" />
+    <Compile Include="Models\EntityGlobal.cs" />
+    <Compile Include="Models\Tarjetas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Services\PagoService.cs" />
     <Compile Include="WebServicePortalPago.asmx.cs">
       <DependentUpon>WebServicePortalPago.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -96,7 +106,11 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202105180056102_Inicial.resx">
+      <DependentUpon>202105180056102_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

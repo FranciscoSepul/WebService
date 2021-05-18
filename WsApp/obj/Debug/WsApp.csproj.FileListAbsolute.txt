@@ -169,8 +169,10 @@ D:\Proyectos\Integracion\WsApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPla
 D:\Proyectos\Integracion\WsApp\bin\EntityFramework.xml
 D:\Proyectos\Integracion\WsApp\bin\EntityFramework.SqlServer.xml
 D:\Proyectos\Integracion\WsApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Proyectos\Integracion\WsApp\obj\Debug\WsApp.csprojAssemblyReference.cache
 D:\Proyectos\Integracion\WsApp\obj\Debug\WsApp.csproj.CoreCompileInputs.cache
 D:\Proyectos\Integracion\WsApp\obj\Debug\WsApp.csproj.CopyComplete
 D:\Proyectos\Integracion\WsApp\obj\Debug\WsApp.dll
 D:\Proyectos\Integracion\WsApp\obj\Debug\WsApp.pdb
+D:\Proyectos\Integracion\WsApp\obj\Debug\WsApp.csprojAssemblyReference.cache
+D:\Proyectos\Integracion\WsApp\obj\Debug\WsApp.Migrations.Inicial.resources
+D:\Proyectos\Integracion\WsApp\obj\Debug\WsApp.csproj.GenerateResource.cache
