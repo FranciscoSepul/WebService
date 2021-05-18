@@ -14,6 +14,21 @@ namespace WsApp.Services
         public CodigosDto Descuento(Descuento descuento)
         {
             CodigosDto codigo = new CodigosDto();
+            using (var db= new ContextModels())
+            {
+                var user = db.Users.SingleOrDefault(x => x.Id.ToString() == descuento.idCliente);
+                if (user !=null)
+                {
+                    user.MontoMaximo = user.MontoMaximo - int.Parse(descuento.monto);
+                    db.SaveChanges();
+                    codigo.codigo =00.ToString();
+                    codigo.mensaje = "sin incidentes ";
+                    return codigo;
+                }
+                codigo.codigo = 15.ToString();
+                codigo.mensaje = "datos erróneos ";
+            }
+            
             return codigo;
         }
 

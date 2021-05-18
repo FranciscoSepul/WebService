@@ -21,6 +21,7 @@ namespace WsApp
     {
         PagoService _pagoService = new PagoService();
 
+        #region Pago
         [WebMethod(Description = "Servicio Portal Pago")]
         public CodigosDto ServicioPagos(string Pan, string Mes, string Ano, string CodigoSeguridad, string MarcaTarjeta, string Pass)
         {
@@ -38,7 +39,7 @@ namespace WsApp
                     pago.MarcaTarjeta = MarcaTarjeta;
                     pago.Pass = Pass;
                     var Response = _pagoService.Pago(pago);
-                    return codigo;
+                    return Response;
                 }
                 else
                 {
@@ -54,8 +55,9 @@ namespace WsApp
             }
            
         }
+        #endregion
 
-
+        #region Descuento
         [WebMethod(Description = "Servicio Descuento")]
         public CodigosDto ServicioDescuento(string idCliente, string monto)
         {
@@ -66,7 +68,7 @@ namespace WsApp
                 descuento.idCliente = idCliente;
                 descuento.monto = monto;
                 var Response = _pagoService.Descuento(descuento);
-                return codigo;
+                return Response;
             }
             else
             {
@@ -75,6 +77,7 @@ namespace WsApp
                 return codigo;
             }
         }
+        #endregion
     }
 
 
